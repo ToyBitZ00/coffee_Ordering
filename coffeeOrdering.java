@@ -35,6 +35,56 @@ public class coffeeOrdering {
                     return;
                 }
                 break;
+            case 2:
+                System.out.println("Item name: Coffee Mocha");
+                System.out.print("Item size: ");
+                size = obj.next().toLowerCase();
+                if (size.equals("med")) {
+                    System.out.println("Item price = 120");
+                    price = 120;
+                } else if (size.equals("large")) {
+                    System.out.println("Item price = 180");
+                    price = 180;
+                } else {
+                    System.out.println("Invalid Size");
+                    return;
+                }
+                break;
+
+            case 3:
+                System.out.println("Item name: Coffee Matcha");
+                System.out.print("Item size: ");
+                size = obj.next().toLowerCase();
+                if (size.equals("med")) {
+                    System.out.println("Item price = 150");
+                    price = 150;
+                } else if (size.equals("large")) {
+                    System.out.println("Item price = 200");
+                    price = 200;
+                } else {
+                    System.out.println("Invalid Size");
+                    return;
+                }
+                break;
+            case 4:
+                System.out.println("Item name: Coffee Brewed");
+                System.out.print("Item size: ");
+                size = obj.next().toLowerCase();
+                if (size.equals("med")) {
+                    System.out.println("Item price = 100");
+                    price = 100;
+                } else if (size.equals("large")) {
+                    System.out.println("Item price = 120");
+                    price = 120;
+                } else {
+                    System.out.println("Invalid Size");
+                    return;
+                }
+                break;
+            default:
+                System.out.println("Wrong input");
+                obj.close();
+                return;
         }
         obj.close();
     }
